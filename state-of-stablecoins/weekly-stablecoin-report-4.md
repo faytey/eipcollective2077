@@ -1,24 +1,23 @@
 ---
-link: https://ethereum2077.substack.com/p/weekly-stablecoin-report-4
 title: Weekly Stablecoin Report #4
-description: Hey hey, stablecoinjoyers! Here is a quick update: From now on, our reviews will include stablecoins with market caps between $30 million and $100 million, as well as blockchains that have total stablecoin market caps between $30 million and $100 million. With this improvement, stablecoins are categorized into three groups and blockchains are four. To prevent misunderstandings, the groups of stablecoins are named “league” and the chains are named “tier.” I hope you enjoy this improvement. Let's begin the third post of our weekly stablecoin reports. In this report, you will find:
-keywords: null
+pubDate: 20/05/2024
 author: Arbnom
-date: 2023-05-20T23:00:00.000Z
-publisher: null
-stats: paragraph=36 sentences=149, words=1716
+tags:
+  - Defi
+layout: "../../layouts/BlogPost.astro"
 ---
+
 Hey hey, stablecoinjoyers! Here is a quick update: From now on, our reviews will include stablecoins with market caps between $30 million and $100 million, as well as blockchains that have total stablecoin market caps between $30 million and $100 million. With this improvement, stablecoins are categorized into three groups and blockchains are four. To prevent misunderstandings, the groups of stablecoins are named "league" and the chains are named "tier." I hope you enjoy this improvement. Let's begin the third post of our weekly stablecoin reports. In this report, you will find:
 
-* Total review of the stablecoin market and a breakdown by projects.
+- Total review of the stablecoin market and a breakdown by projects.
 
-* Total breakdown of the stablecoin market by blockchains.
+- Total breakdown of the stablecoin market by blockchains.
 
-* The most attractive stablecoin yields.
+- The most attractive stablecoin yields.
 
-* Important events and news from the last week.
+- Important events and news from the last week.
 
-* Useful resources for more stablecoin information.
+- Useful resources for more stablecoin information.
 
 As of May 19th, the total stablecoin market is $161.08 billion, up by 0.66% from last week. USDT's dominance of the entire stablecoin market is 68.99%, compared to 69.05% last week. The pie chart below shows the dominance of Tether relative to other stablecoins with a market cap over $1 billion, i.e., the stables of the first league.
 
@@ -50,32 +49,32 @@ Here, StarkNet saw the biggest gain with a 17.96% increase. This is followed by 
 
 Let's take a look at the stablecoins offering the highest APYs. These yields are sourced from DeFiLlama and include all types of yields with over $10 million in TVL. Remember that interactions with contracts carry various risks, including hacks, exploits, impermanent loss, depegging scenarios, etc. Please be aware of these risks before engaging and always DYOR!
 
-* **[MakerDAO Introduces New Stablecoins to Replace DAI](https://thedefiant.io/news/defi/our-most-read-stories-this-week-pump-fun-hack-blast-token-s-and-p-on-rwa-solana-vs-ethereum)** Rune Christensen, the founder of MakerDAO, announced the introduction of two new stablecoins, NewStable and PureDAI, as part of the Endgame plan. These stablecoins aim to replace DAI, which is currently valued at $5.4 billion. NewStable will be the successor of DAI, focused on growth, yield, and resilience, while PureDAI will focus on being maximally decentralized.
+- **[MakerDAO Introduces New Stablecoins to Replace DAI](https://thedefiant.io/news/defi/our-most-read-stories-this-week-pump-fun-hack-blast-token-s-and-p-on-rwa-solana-vs-ethereum)** Rune Christensen, the founder of MakerDAO, announced the introduction of two new stablecoins, NewStable and PureDAI, as part of the Endgame plan. These stablecoins aim to replace DAI, which is currently valued at $5.4 billion. NewStable will be the successor of DAI, focused on growth, yield, and resilience, while PureDAI will focus on being maximally decentralized.
 
-* **[Liquity Launches Innovative Stablecoin with User-Defined Rates](https://www.coindesk.com/tech/2024/05/14/defi-lender-liquity-unveils-new-stablecoin-with-user-set-borrowing-rates-in-white-paper/)** Liquity is launching BOLD, a new stablecoin backed by liquid staking ETH derivatives, allowing borrowers to set their interest rates. Scheduled for release in Q3, this upgrade aims to enhance liquidity and returns for investors, differentiating from its existing LUSD stablecoin.
+- **[Liquity Launches Innovative Stablecoin with User-Defined Rates](https://www.coindesk.com/tech/2024/05/14/defi-lender-liquity-unveils-new-stablecoin-with-user-set-borrowing-rates-in-white-paper/)** Liquity is launching BOLD, a new stablecoin backed by liquid staking ETH derivatives, allowing borrowers to set their interest rates. Scheduled for release in Q3, this upgrade aims to enhance liquidity and returns for investors, differentiating from its existing LUSD stablecoin.
 
-* **[crvUSD Outperforms Curve DEX in Revenue Despite Lower Market Cap](https://x.com/DeFi_Made_Here/status/1791429869420650833)** A recent tweet by @DeFi_Made_Here highlighted the profitability of stablecoins in the DeFi sector, noting that crvUSD generates more revenue than Curve DEX. Despite having a market cap of $130 million only, crvUSD's revenue exceeds that of Curve DEX, underscoring the strong business potential of stablecoins within decentralized finance.
+- **[crvUSD Outperforms Curve DEX in Revenue Despite Lower Market Cap](https://x.com/DeFi_Made_Here/status/1791429869420650833)** A recent tweet by @DeFi_Made_Here highlighted the profitability of stablecoins in the DeFi sector, noting that crvUSD generates more revenue than Curve DEX. Despite having a market cap of $130 million only, crvUSD's revenue exceeds that of Curve DEX, underscoring the strong business potential of stablecoins within decentralized finance.
 
-* **[Ripple CEO Highlights Potential US Crackdown on Tether](https://cointelegraph.com/news/us-government-going-after-tether-ripple-ceo-claims)** Brad Garlinghouse, CEO of Ripple, stated that the U.S. government is "going after" Tether, hinting at potential regulatory challenges for the stablecoin issuer. He emphasized Tether's importance to the ecosystem and expressed uncertainty about the impact of these actions.
+- **[Ripple CEO Highlights Potential US Crackdown on Tether](https://cointelegraph.com/news/us-government-going-after-tether-ripple-ceo-claims)** Brad Garlinghouse, CEO of Ripple, stated that the U.S. government is "going after" Tether, hinting at potential regulatory challenges for the stablecoin issuer. He emphasized Tether's importance to the ecosystem and expressed uncertainty about the impact of these actions.
 
-* **[Tether CEO Refutes Claims of US Government Targeting USDT](https://www.theblock.co/post/294141/tether-ceo-riled-up-by-suggestion-usdt-is-a-target-of-us-government)** Paolo Ardoino, Tether's CEO, defended USDT against claims of regulatory targeting, indirectly responding to comments from Ripple's CEO Brad Garlinghouse. Ardoino emphasized USDT's security and Tether's compliance with regulatory standards.
+- **[Tether CEO Refutes Claims of US Government Targeting USDT](https://www.theblock.co/post/294141/tether-ceo-riled-up-by-suggestion-usdt-is-a-target-of-us-government)** Paolo Ardoino, Tether's CEO, defended USDT against claims of regulatory targeting, indirectly responding to comments from Ripple's CEO Brad Garlinghouse. Ardoino emphasized USDT's security and Tether's compliance with regulatory standards.
 
-* **[Tether Takes Action Against Phishing Scams, Freezes $5.2M in USDT](https://cointelegraph.com/news/tether-freezes-usdt-phishing-scams)** Tether froze $5.2 million in USDT across 12 Ethereum wallets tied to phishing scams, continuing its efforts to combat illicit activities. Since its inception, Tether has blocked over $1 billion in assets linked to various illegal operations, collaborating with global law enforcement.
+- **[Tether Takes Action Against Phishing Scams, Freezes $5.2M in USDT](https://cointelegraph.com/news/tether-freezes-usdt-phishing-scams)** Tether froze $5.2 million in USDT across 12 Ethereum wallets tied to phishing scams, continuing its efforts to combat illicit activities. Since its inception, Tether has blocked over $1 billion in assets linked to various illegal operations, collaborating with global law enforcement.
 
-* **[Circle Moves Legal Base to US, Prepares for IPO](https://cointelegraph.com/news/circle-shifts-legal-home-us-ahead-ipo)** Circle, the company behind USDC, announced plans to move its legal base from Ireland to the United States, aligning with its upcoming IPO. This move, while increasing compliance costs, aims to bolster investor confidence amidst tightening U.S. crypto regulations.
+- **[Circle Moves Legal Base to US, Prepares for IPO](https://cointelegraph.com/news/circle-shifts-legal-home-us-ahead-ipo)** Circle, the company behind USDC, announced plans to move its legal base from Ireland to the United States, aligning with its upcoming IPO. This move, while increasing compliance costs, aims to bolster investor confidence amidst tightening U.S. crypto regulations.
 
-* **[Chinese Authorities Bust $1.9B USDT Underground Network](https://cointelegraph.com/news/chinese-police-bust-usdt-underground-banking-ring)** Chinese authorities dismantled a $1.9 billion underground banking operation involving USDT, arresting 193 suspects across 26 provinces. The illicit network facilitated currency exchanges for smuggling various goods overseas, bypassing China's crypto ban.
+- **[Chinese Authorities Bust $1.9B USDT Underground Network](https://cointelegraph.com/news/chinese-police-bust-usdt-underground-banking-ring)** Chinese authorities dismantled a $1.9 billion underground banking operation involving USDT, arresting 193 suspects across 26 provinces. The illicit network facilitated currency exchanges for smuggling various goods overseas, bypassing China's crypto ban.
 
-* **[Kraken Evaluates Delisting Tether in Europe Due to New Regulations](https://www.theblock.co/post/295178/kraken-actively-reviewing-end-tether-eu)** Kraken is considering delisting Tether (USDT) from its European platform due to impending MiCA regulations. While no decision has been made, this move would align Kraken with OKX, which already delisted Tether in response to regulatory pressures.
+- **[Kraken Evaluates Delisting Tether in Europe Due to New Regulations](https://www.theblock.co/post/295178/kraken-actively-reviewing-end-tether-eu)** Kraken is considering delisting Tether (USDT) from its European platform due to impending MiCA regulations. While no decision has been made, this move would align Kraken with OKX, which already delisted Tether in response to regulatory pressures.
 
-* **[Synthetix's sUSD Stablecoin Experiences Depegging](https://www.theblock.co/post/295074/synthetix-susd-depeg)** Synthetix's sUSD fell to $0.92 before recovering to $0.96 due to a major liquidity provider withdrawing funds. The depegging incident underscores the challenges faced by decentralized stablecoins in maintaining their value stability.
+- **[Synthetix's sUSD Stablecoin Experiences Depegging](https://www.theblock.co/post/295074/synthetix-susd-depeg)** Synthetix's sUSD fell to $0.92 before recovering to $0.96 due to a major liquidity provider withdrawing funds. The depegging incident underscores the challenges faced by decentralized stablecoins in maintaining their value stability.
 
-* **[Fed Governor Calls for Unified State and Federal Stablecoin Regulations](https://www.theblock.co/post/294754/states-and-the-federal-government-need-to-work-together-on-stablecoins-fed-governor-bowman)** Fed Governor Michelle Bowman advocated for state and federal collaboration in regulating stablecoins. Emphasizing the importance of a unified framework, she highlighted ongoing legislative efforts to define the roles of different regulatory bodies in overseeing stablecoin issuers.
+- **[Fed Governor Calls for Unified State and Federal Stablecoin Regulations](https://www.theblock.co/post/294754/states-and-the-federal-government-need-to-work-together-on-stablecoins-fed-governor-bowman)** Fed Governor Michelle Bowman advocated for state and federal collaboration in regulating stablecoins. Emphasizing the importance of a unified framework, she highlighted ongoing legislative efforts to define the roles of different regulatory bodies in overseeing stablecoin issuers.
 
-* **[DAI's Supply Grows 24% Amid High Yield Opportunities](https://www.theblock.co/post/294190/dai-ling-back-in-breaking-down-dais-circulating-supply)** DAI's supply surged from $4.42 billion to $5.48 billion, driven by high yields from the Dai Savings Rate (DSR). MakerDAO's recent adjustments to the DSR and fee mechanisms have spurred significant growth in DAI's circulating supply.
+- **[DAI's Supply Grows 24% Amid High Yield Opportunities](https://www.theblock.co/post/294190/dai-ling-back-in-breaking-down-dais-circulating-supply)** DAI's supply surged from $4.42 billion to $5.48 billion, driven by high yields from the Dai Savings Rate (DSR). MakerDAO's recent adjustments to the DSR and fee mechanisms have spurred significant growth in DAI's circulating supply.
 
-* **[Ex-CFTC Chair Chris Giancarlo Joins Paxos Board of Directors](https://www.theblock.co/post/294357/paxos-adds-former-cftc-chair-chris-giancarlo-to-its-board-of-directors)** Paxos announced that former CFTC Chair J. Christopher Giancarlo has joined its board of directors. Giancarlo, known as "CryptoDad," will assist Paxos in its growth and regulatory compliance efforts, reinforcing its leadership in the digital asset market.
+- **[Ex-CFTC Chair Chris Giancarlo Joins Paxos Board of Directors](https://www.theblock.co/post/294357/paxos-adds-former-cftc-chair-chris-giancarlo-to-its-board-of-directors)** Paxos announced that former CFTC Chair J. Christopher Giancarlo has joined its board of directors. Giancarlo, known as "CryptoDad," will assist Paxos in its growth and regulatory compliance efforts, reinforcing its leadership in the digital asset market.
 
-* **[Former Speaker Paul Ryan Highlights Stablecoins in Debt Solution Discussion](https://x.com/nic__carter/status/1790540747466223921)** During a recent Bloomberg interview, former House Speaker Paul Ryan brought up stablecoins as a solution to managing the national debt. Ryan's unprompted mention of stablecoins reflects their growing recognition in financial policy discussions. He noted that stablecoins, if considered a sovereign, would rank as the 16th largest buyer of U.S. Treasuries. This endorsement from a prominent policymaker signifies a significant shift in the acceptance and potential integration of stablecoins into the financial system.
+- **[Former Speaker Paul Ryan Highlights Stablecoins in Debt Solution Discussion](https://x.com/nic__carter/status/1790540747466223921)** During a recent Bloomberg interview, former House Speaker Paul Ryan brought up stablecoins as a solution to managing the national debt. Ryan's unprompted mention of stablecoins reflects their growing recognition in financial policy discussions. He noted that stablecoins, if considered a sovereign, would rank as the 16th largest buyer of U.S. Treasuries. This endorsement from a prominent policymaker signifies a significant shift in the acceptance and potential integration of stablecoins into the financial system.
 
 I hope you've found this report informative. See you in the next report. In the meantime, you can read other posts on Ethereum2077. And if you've missed last week's report, you can read it [here](https://ethereum2077.substack.com/p/weekly-stablecoin-report-3). Finally, keep enjoying stability!

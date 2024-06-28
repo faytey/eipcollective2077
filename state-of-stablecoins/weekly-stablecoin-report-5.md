@@ -1,24 +1,23 @@
 ---
-link: https://ethereum2077.substack.com/p/weekly-stablecoin-report-5
 title: Weekly Stablecoin Report #5
-description: Hey hey, stablecoinjoyers! As you may remember from previous reports, we categorize stablecoins into three groups and blockchains into four. The groups of stablecoins are named “leagues” and the chains are named “tiers.” Let's begin this week’s stablecoin report. In this report, you will find:
-keywords: null
+pubDate: 28/05/2024
 author: Arbnom
-date: null
-publisher: null
-stats: paragraph=28 sentences=142, words=1450
+tags:
+  - Defi
+layout: "../../layouts/BlogPost.astro"
 ---
+
 Hey hey, stablecoinjoyers! As you may remember from [previous reports](https://ethereum2077.substack.com/s/stablecoin-reports), we categorize stablecoins into three groups and blockchains into four. The groups of stablecoins are named "leagues" and the chains are named "tiers." Let's begin this week's stablecoin report. In this report, you will find:
 
-* Total review of the stablecoin market and a breakdown by projects.
+- Total review of the stablecoin market and a breakdown by projects.
 
-* Total breakdown of the stablecoin market by blockchains.
+- Total breakdown of the stablecoin market by blockchains.
 
-* The most attractive stablecoin yields.
+- The most attractive stablecoin yields.
 
-* Important events and news from the last week.
+- Important events and news from the last week.
 
-* Useful resources for more stablecoin information.
+- Useful resources for more stablecoin information.
 
 As of May 26th, the total stablecoin market is $161.08 billion, the same as last week. USDT's dominance of the entire stablecoin market is 69.36%, compared to 68.99% last week. The pie chart below shows the dominance of Tether relative to other stablecoins with a market cap over $1 billion, i.e., the stables of the first league.
 
@@ -54,12 +53,12 @@ Heco was the most significant stablecoin gainer this week by percentage. It gain
 
 Let's take a look at the stablecoins offering the highest APYs. These yields are sourced from DeFiLlama and include all types of yields with over $10 million in TVL. Remember that interactions with contracts carry various risks, including hacks, exploits, impermanent loss, depegging scenarios, etc. Please be aware of these risks before engaging and always DYOR!
 
-* **[Nomura and GMO Group Form Stablecoin Partnership in Japan](https://cointelegraph.com/news/nomura-holdings-gmo-group-stablecoin-research-partnership-japan)** Nomura Holdings and GMO Internet Group have partnered to explore the issuance of Japanese yen (JPY) and U.S. dollar (USD) stablecoins in Japan. The collaboration, which includes Laser Digital Holdings, will focus on regulatory compliance and stablecoin services. This initiative aims to enhance digital asset accessibility and innovation within Japan's financial landscape.
+- **[Nomura and GMO Group Form Stablecoin Partnership in Japan](https://cointelegraph.com/news/nomura-holdings-gmo-group-stablecoin-research-partnership-japan)** Nomura Holdings and GMO Internet Group have partnered to explore the issuance of Japanese yen (JPY) and U.S. dollar (USD) stablecoins in Japan. The collaboration, which includes Laser Digital Holdings, will focus on regulatory compliance and stablecoin services. This initiative aims to enhance digital asset accessibility and innovation within Japan's financial landscape.
 
-* **[Ripple CEO Criticized Over Tether Comments](https://cointelegraph.com/news/ripple-garlinghouse-tether-samson-mow)** Ripple CEO Brad Garlinghouse faced criticism for comments suggesting the U.S. government is targeting Tether. Samson Mow, CEO of Jan3, accused Garlinghouse of spreading fear and uncertainty to compete against Tether. Garlinghouse clarified his comments, stating that Tether is an important part of the ecosystem, but concerns remain about increased regulatory scrutiny.
+- **[Ripple CEO Criticized Over Tether Comments](https://cointelegraph.com/news/ripple-garlinghouse-tether-samson-mow)** Ripple CEO Brad Garlinghouse faced criticism for comments suggesting the U.S. government is targeting Tether. Samson Mow, CEO of Jan3, accused Garlinghouse of spreading fear and uncertainty to compete against Tether. Garlinghouse clarified his comments, stating that Tether is an important part of the ecosystem, but concerns remain about increased regulatory scrutiny.
 
-* **[Kraken Maintains USDT Listing in Europe Amid MiCA Review](https://cointelegraph.com/news/crypto-exchange-kraken-no-plans-delist-usdt-tether-europe)** Kraken announced it has "no plans" to delist Tether (USDT) in Europe, despite a Bloomberg report suggesting otherwise. The exchange is actively reviewing its compliance with the upcoming Markets in Crypto-Assets Regulation (MiCA) framework but intends to continue offering USDT to European customers while adhering to all legal requirements.
+- **[Kraken Maintains USDT Listing in Europe Amid MiCA Review](https://cointelegraph.com/news/crypto-exchange-kraken-no-plans-delist-usdt-tether-europe)** Kraken announced it has "no plans" to delist Tether (USDT) in Europe, despite a Bloomberg report suggesting otherwise. The exchange is actively reviewing its compliance with the upcoming Markets in Crypto-Assets Regulation (MiCA) framework but intends to continue offering USDT to European customers while adhering to all legal requirements.
 
-* **[UK Election Date Set, Crypto Hub Plans Uncertain](https://www.coindesk.com/policy/2024/05/22/uk-sets-july-4-date-for-election-likely-to-oust-conservative-party-spelling-uncertainty-for-crypto-hub-plans/)** UK Prime Minister Rishi Sunak announced a general election for July 4, potentially ending the Conservative Party's crypto-friendly governance. The opposition Labour Party, which is leading in polls, has been silent on crypto regulation but has expressed interest in promoting tokenization. The outcome of the election could impact the future of the UK as a crypto hub.
+- **[UK Election Date Set, Crypto Hub Plans Uncertain](https://www.coindesk.com/policy/2024/05/22/uk-sets-july-4-date-for-election-likely-to-oust-conservative-party-spelling-uncertainty-for-crypto-hub-plans/)** UK Prime Minister Rishi Sunak announced a general election for July 4, potentially ending the Conservative Party's crypto-friendly governance. The opposition Labour Party, which is leading in polls, has been silent on crypto regulation but has expressed interest in promoting tokenization. The outcome of the election could impact the future of the UK as a crypto hub.
 
 I hope you've found this report informative. See you in the next report. In the meantime, you can read other posts on Ethereum2077. And if you missed last week's report, you can read it [here](https://ethereum2077.substack.com/p/weekly-stablecoin-report-4). Finally, keep enjoying stability!

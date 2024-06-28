@@ -1,12 +1,10 @@
 ---
-link: https://ethereum2077.substack.com/p/a-guide-to-erc-7512-on-chain-representation
 title: EIPs For Nerds #1: ERC-7512 (On-Chain Representation For Security Audits)
-description: “Decentralize X and put it on the blockchain” has never sounded so good.
-keywords: null
+pubDate: 05/12/2023
 author: Emmanuel Awosika
-date: 2024-06-28T00:00:00.000Z
-publisher: null
-stats: paragraph=58 sentences=146, words=3938
+tags:
+  - Defi
+layout: "../../layouts/BlogPost.astro"
 ---
 
 Imagine this scenario: you're playing \_Who Wants To Be A Millionaire?\_and a million-dollar question comes up: "What event has represented the biggest existential threat to Ethereum in the network's history?"
@@ -106,9 +104,7 @@ ERC-7512's design (driven by the need for simplicity) also complicates the probl
 
 While the intention is commendable, missing out on critical information like vulnerability findings may lower the value of the proposed scheme to represent audits on-chain. See the comment below from the discussion of ERC-7512 (by [Dexaran](https://ethereum-magicians.org/u/Dexaran)) for context:
 
-> _"The current ERC does not have any mentions of the findings of an audit...This is the most crucial part honestly. There can be multiple audit reports for one contract and if at least one indicates a problem with the contract - it is more important than all other reports that do not indicate any problems with this exact contract._
-> _If you have 3 auditors who have reviewed one contract, two of them found nothing and the third found a critical vulnerability - it's much more logical to indicate that "the contract might have a critical vulnerability" rather than resort to an assumption "if there is at least one audit report that doesn't indicate any problems then the contract is most likely safe"._
-> _I think that a system that does not allow for findings specification and independent audits submissions for multiple different auditors - will not work or even worse it will deceive users into thinking that some contract is secure while in fact there are problems with it." — u/Dexeran_
+> _"The current ERC does not have any mentions of the findings of an audit...This is the most crucial part honestly. There can be multiple audit reports for one contract and if at least one indicates a problem with the contract - it is more important than all other reports that do not indicate any problems with this exact contract._ > _If you have 3 auditors who have reviewed one contract, two of them found nothing and the third found a critical vulnerability - it's much more logical to indicate that "the contract might have a critical vulnerability" rather than resort to an assumption "if there is at least one audit report that doesn't indicate any problems then the contract is most likely safe"._ > _I think that a system that does not allow for findings specification and independent audits submissions for multiple different auditors - will not work or even worse it will deceive users into thinking that some contract is secure while in fact there are problems with it." — u/Dexeran_
 
 **2.**The initial version of ERC-7512 tries to create visible connections between audits and the smart contracts covered by auditors by including a `deployment`value in the `AuditSummary`data type that points to the deployment address for the audited contract. This way, protocols don't have to go through a roundabout process of copy-pasting contract addresses from a PDF and searching for the relevant contract address via blockchain explorers like Etherscan.
 

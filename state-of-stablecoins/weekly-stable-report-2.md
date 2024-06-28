@@ -1,26 +1,25 @@
 ---
-link: https://ethereum2077.substack.com/p/weekly-stable-report-2
 title: Weekly Stable Report #2
-description: Hey hey stablecoinjoyers, we have awesome news! Starting now, your favorite weekly stablecoin report will be a part of Ethereum 2077. Are you ready for the very second post of our weekly stablecoin reports? In this report you will find: Total review of the stablecoin market and a breakdown by projects.
-keywords: null
+pubDate: 07/05/2024
 author: Arbnom
-date: null
-publisher: null
-stats: paragraph=35 sentences=130, words=1658
+tags:
+  - Defi
+layout: "../../layouts/BlogPost.astro"
 ---
+
 Hey hey stablecoinjoyers, we have awesome news! Starting now, your favorite weekly stablecoin report will be a part of Ethereum 2077. Are you ready for the very second post of our weekly stablecoin reports? In this report you will find:
 
-* Total review of the stablecoin market and a breakdown by projects.
+- Total review of the stablecoin market and a breakdown by projects.
 
-* Total breakdown of the stablecoin market by blockchains.
+- Total breakdown of the stablecoin market by blockchains.
 
-* The most attractive stablecoin yields.
+- The most attractive stablecoin yields.
 
-* Important events and news from the last week.
+- Important events and news from the last week.
 
-* Amazing resources for more stablecoin information.
+- Amazing resources for more stablecoin information.
 
-* Last words.
+- Last words.
 
 As of May 7th, the total stablecoin market is $160.2 billion, up by 0.34% from last week. USDT dominance is 69.14%, which was the same last week. To see the dominance of Tether, let's check the pie chart of stablecoins with a market cap over $1 billion, i.e., the stables of the first league.
 
@@ -46,34 +45,34 @@ Comparing the last week, only BSC and Solana experienced some loss in market cap
 
 Let's take a look at the stablecoins offering the highest APYs. These yields are sourced from DeFiLlama and Stable.fish and include all types of yields with over $10 million in TVL. Remember that interactions with contracts carry various risks, including hacks, exploits, impermanent loss, depegging scenarios, etc. Please be aware of these risks before engaging and always DYOR!
 
-* Visa's recent analysis [reveals](https://www.bnnbloomberg.ca/more-than-90-of-stablecoin-transactions-aren-t-from-real-users-study-finds-1.2069080)that over 90% of stablecoin transactions may not be authentic, casting doubts on their widespread adoption for payments. The study, conducted in collaboration with Allium Labs, showed that only about 10% of stablecoin transactions in April were genuine "organic payments activity," totaling $149 billion of the $2.2 trillion processed. This metric was developed to filter out the noise created by bots and high-volume traders, focusing instead on transactions by real users. The implications suggest that stablecoins might still be in the nascent stages as a mainstream payment method, despite their potential to disrupt traditional financial transactions with rapid and cost-effective transfers.
+- Visa's recent analysis [reveals](https://www.bnnbloomberg.ca/more-than-90-of-stablecoin-transactions-aren-t-from-real-users-study-finds-1.2069080)that over 90% of stablecoin transactions may not be authentic, casting doubts on their widespread adoption for payments. The study, conducted in collaboration with Allium Labs, showed that only about 10% of stablecoin transactions in April were genuine "organic payments activity," totaling $149 billion of the $2.2 trillion processed. This metric was developed to filter out the noise created by bots and high-volume traders, focusing instead on transactions by real users. The implications suggest that stablecoins might still be in the nascent stages as a mainstream payment method, despite their potential to disrupt traditional financial transactions with rapid and cost-effective transfers.
 
-* Proposed regulations in the U.S. might [limit](https://www.coindesk.com/business/2024/04/24/tethers-stablecoin-dominance-may-wane-following-proposed-us-rules-sp/)non-banking institutions to issuing a maximum of $10 billion in stablecoins, potentially diminishing Tether's market dominance and encouraging traditional banks to enter the stablecoin arena. The Lummis-Gillibrand Payment Stablecoin Act could foster a more competitive and diversified stablecoin market, as reported by S&P Global Ratings.
+- Proposed regulations in the U.S. might [limit](https://www.coindesk.com/business/2024/04/24/tethers-stablecoin-dominance-may-wane-following-proposed-us-rules-sp/)non-banking institutions to issuing a maximum of $10 billion in stablecoins, potentially diminishing Tether's market dominance and encouraging traditional banks to enter the stablecoin arena. The Lummis-Gillibrand Payment Stablecoin Act could foster a more competitive and diversified stablecoin market, as reported by S&P Global Ratings.
 
-* BlackRock's USD Institutional Digital Liquidity Fund, BUIDL, has quickly [ascended](https://cointelegraph.com/news/blackrocks-buidl-becomes-worlds-largest-tokenized-treasury-fund)as the foremost tokenized treasury fund on a blockchain, surpassing Franklin Templeton's BENJI. Achieving a market cap of $375 million within just six weeks of launch, BUIDL underscores the escalating interest and potential within blockchain-based financial structures.
+- BlackRock's USD Institutional Digital Liquidity Fund, BUIDL, has quickly [ascended](https://cointelegraph.com/news/blackrocks-buidl-becomes-worlds-largest-tokenized-treasury-fund)as the foremost tokenized treasury fund on a blockchain, surpassing Franklin Templeton's BENJI. Achieving a market cap of $375 million within just six weeks of launch, BUIDL underscores the escalating interest and potential within blockchain-based financial structures.
 
-* Visa's on-chain analytics reveal that Circle's USDC has recently [eclipsed](https://cointelegraph.com/news/circle-usdc-overtakes-tether-usdt)Tether's USDT in monthly transaction count. As of April 2024, USDC registered 166.6 million transactions, marginally outpacing USDT's 163.6 million. This milestone reflects USDC's growing prominence, despite USDT maintaining a dominant market cap presence.
+- Visa's on-chain analytics reveal that Circle's USDC has recently [eclipsed](https://cointelegraph.com/news/circle-usdc-overtakes-tether-usdt)Tether's USDT in monthly transaction count. As of April 2024, USDC registered 166.6 million transactions, marginally outpacing USDT's 163.6 million. This milestone reflects USDC's growing prominence, despite USDT maintaining a dominant market cap presence.
 
-* Efforts to attach U.S. stablecoin regulation to the must-pass Federal Aviation Administration reauthorization were [blocked](https://www.coindesk.com/policy/2024/04/30/stablecoin-bill-unlikely-to-get-pinned-to-faa-reauthorization-putting-effort-on-hold-again/), maintaining the bill's purity. Although there was significant bipartisan maneuvering to leverage the FAA bill to pass stablecoin regulations, congressional leaders opted to keep the bill clean, pushing the stablecoin legislative efforts back to the negotiation table.
+- Efforts to attach U.S. stablecoin regulation to the must-pass Federal Aviation Administration reauthorization were [blocked](https://www.coindesk.com/policy/2024/04/30/stablecoin-bill-unlikely-to-get-pinned-to-faa-reauthorization-putting-effort-on-hold-again/), maintaining the bill's purity. Although there was significant bipartisan maneuvering to leverage the FAA bill to pass stablecoin regulations, congressional leaders opted to keep the bill clean, pushing the stablecoin legislative efforts back to the negotiation table.
 
-* Terraform Labs is [contesting](https://www.theblock.co/post/292249/terraform-labs-lawyers-push-back-against-sec-argue-token-sales-were-mostly-outside-us)the SEC's demand for $5.3 billion in fines, arguing that their token sales occurred primarily outside the U.S. and did not significantly impact American investors. This legal pushback comes as part of an ongoing debate over the reach of U.S. regulatory authority in the global cryptocurrency market.
+- Terraform Labs is [contesting](https://www.theblock.co/post/292249/terraform-labs-lawyers-push-back-against-sec-argue-token-sales-were-mostly-outside-us)the SEC's demand for $5.3 billion in fines, arguing that their token sales occurred primarily outside the U.S. and did not significantly impact American investors. This legal pushback comes as part of an ongoing debate over the reach of U.S. regulatory authority in the global cryptocurrency market.
 
-* Tether has [announced](https://www.theblock.co/post/291938/tether-sees-record-net-profit-of-over-4-5-billion-in-first-quarter-of-2024)a record net profit of $4.5 billion in the first quarter of 2024, driven largely by its U.S. Treasury holdings and strategic investments in bitcoin and gold. This financial milestone underscores Tether's robust position in the stablecoin market and its continued growth in the broader financial ecosystem.
+- Tether has [announced](https://www.theblock.co/post/291938/tether-sees-record-net-profit-of-over-4-5-billion-in-first-quarter-of-2024)a record net profit of $4.5 billion in the first quarter of 2024, driven largely by its U.S. Treasury holdings and strategic investments in bitcoin and gold. This financial milestone underscores Tether's robust position in the stablecoin market and its continued growth in the broader financial ecosystem.
 
-* The European Union is [poised](https://www.coindesk.com/policy/2024/04/29/heres-how-eu-nations-are-preparing-to-enforce-mica/)to implement the Markets in Crypto Assets (MiCA) regulation, focusing specifically on stablecoins. Set to take effect in June, MiCA mandates national regulators to license and oversee stablecoin issuers. This regulation represents a significant step toward standardized oversight across all EU member states, ensuring that stablecoin operations meet stringent compliance standards, enhancing the security and stability of digital currencies within the EU.
+- The European Union is [poised](https://www.coindesk.com/policy/2024/04/29/heres-how-eu-nations-are-preparing-to-enforce-mica/)to implement the Markets in Crypto Assets (MiCA) regulation, focusing specifically on stablecoins. Set to take effect in June, MiCA mandates national regulators to license and oversee stablecoin issuers. This regulation represents a significant step toward standardized oversight across all EU member states, ensuring that stablecoin operations meet stringent compliance standards, enhancing the security and stability of digital currencies within the EU.
 
-* Recent data [indicates](https://www.theblock.co/post/291367/tether-usdc-and-dai-transaction-volume-surpasses-visas-2023-monthly-average-nansen)that the combined transaction volume of Tether, USDC, and DAI has exceeded Visa's average monthly transaction volume for 2023. This milestone reflects the growing prominence of stablecoins as viable competitors to traditional financial systems in terms of transaction throughput and efficiency.
+- Recent data [indicates](https://www.theblock.co/post/291367/tether-usdc-and-dai-transaction-volume-surpasses-visas-2023-monthly-average-nansen)that the combined transaction volume of Tether, USDC, and DAI has exceeded Visa's average monthly transaction volume for 2023. This milestone reflects the growing prominence of stablecoins as viable competitors to traditional financial systems in terms of transaction throughput and efficiency.
 
-* The trajectory for passing a stablecoin bill in the U.S. Congress is narrowing as election season [approaches](https://www.coindesk.com/policy/2024/04/24/the-ever-dwindling-chances-for-a-stablecoin-law/), making it increasingly unlikely. Despite the collaborative efforts of key legislators, the stablecoin regulation may need to hitch a ride on essential year-end bills if it hopes to pass, highlighting the complex political dynamics at play.
+- The trajectory for passing a stablecoin bill in the U.S. Congress is narrowing as election season [approaches](https://www.coindesk.com/policy/2024/04/24/the-ever-dwindling-chances-for-a-stablecoin-law/), making it increasingly unlikely. Despite the collaborative efforts of key legislators, the stablecoin regulation may need to hitch a ride on essential year-end bills if it hopes to pass, highlighting the complex political dynamics at play.
 
-* Aave Labs has proposed substantial [upgrades](https://cointelegraph.com/news/aave-unveils-v4-protocol-overhaul-2030-roadmap)to its DeFi lending protocol, introducing a next-generation framework aimed at refining functionalities such as its native stablecoin GHO and cross-chain liquidity provisions. This strategic evolution is designed to enhance user experience and system resilience.
+- Aave Labs has proposed substantial [upgrades](https://cointelegraph.com/news/aave-unveils-v4-protocol-overhaul-2030-roadmap)to its DeFi lending protocol, introducing a next-generation framework aimed at refining functionalities such as its native stablecoin GHO and cross-chain liquidity provisions. This strategic evolution is designed to enhance user experience and system resilience.
 
-* Despite the foundational ethos of decentralization in blockchain, notable industry players like Consensys, Ripple, and Stellar are [engaging](https://cointelegraph.com/news/crypto-leaders-should-stop-flirting-with-cbdcs)with central bank digital currencies (CBDCs). This involvement has sparked discussions within the community about the potential implications for privacy and autonomy in the evolving digital currency landscape.
+- Despite the foundational ethos of decentralization in blockchain, notable industry players like Consensys, Ripple, and Stellar are [engaging](https://cointelegraph.com/news/crypto-leaders-should-stop-flirting-with-cbdcs)with central bank digital currencies (CBDCs). This involvement has sparked discussions within the community about the potential implications for privacy and autonomy in the evolving digital currency landscape.
 
-* Despite broader market instability, stablecoin volumes have [remained](https://www.theblock.co/post/291954/stablecoin-volumes-stay-strong-as-fdusd-hits-record-high-while-usdt-declines)strong, with First Digital USD seeing record transaction volumes. While Tether's USDT saw a slight decline, newer stablecoins like Ethena's USDe are gaining significant traction, reflecting a diversifying and competitive market landscape.
+- Despite broader market instability, stablecoin volumes have [remained](https://www.theblock.co/post/291954/stablecoin-volumes-stay-strong-as-fdusd-hits-record-high-while-usdt-declines)strong, with First Digital USD seeing record transaction volumes. While Tether's USDT saw a slight decline, newer stablecoins like Ethena's USDe are gaining significant traction, reflecting a diversifying and competitive market landscape.
 
-* Senators Elizabeth Warren and Roger Marshall are [seeking](https://www.theblock.co/post/291728/sens-warren-and-marshall-pose-questions-to-biden-officials-about-the-use-of-crypto-to-evade-sanctions)clarity from Biden administration officials on the use of cryptocurrencies like Tether to bypass sanctions. Their inquiry highlights concerns over the potential for digital assets to undermine national security and regulatory measures.
+- Senators Elizabeth Warren and Roger Marshall are [seeking](https://www.theblock.co/post/291728/sens-warren-and-marshall-pose-questions-to-biden-officials-about-the-use-of-crypto-to-evade-sanctions)clarity from Biden administration officials on the use of cryptocurrencies like Tether to bypass sanctions. Their inquiry highlights concerns over the potential for digital assets to undermine national security and regulatory measures.
 
-* Bitwise's CIO Matt Hougan [suggests](https://www.theblock.co/post/291691/stablecoin-legislation-bigger-than-us-spot-bitcoin-etfs-bitwise-cio-matt-hougan)that forthcoming comprehensive stablecoin legislation could have a more transformative impact on cryptocurrency adoption than the U.S. spot bitcoin ETFs. This legislation is seen as a potential catalyst for mainstreaming stablecoins, enhancing their role in the global financial system.
+- Bitwise's CIO Matt Hougan [suggests](https://www.theblock.co/post/291691/stablecoin-legislation-bigger-than-us-spot-bitcoin-etfs-bitwise-cio-matt-hougan)that forthcoming comprehensive stablecoin legislation could have a more transformative impact on cryptocurrency adoption than the U.S. spot bitcoin ETFs. This legislation is seen as a potential catalyst for mainstreaming stablecoins, enhancing their role in the global financial system.
 
 I hope you've found this report informative. As stated at the beginning, from now on, Ethereum2077 will host the weekly stablecoin reports. Don't forget to subscribe for free to ensure you don't miss future reports and articles. In the meantime, you can read other posts on Ethereum2077, and if you've missed last week's report, you can read it [here](https://arbnom.substack.com/p/weekly-stable-report-1). And remember, always keep enjoying stability.

@@ -1,13 +1,12 @@
 ---
-link: https://ethereum2077.substack.com/p/data-availability-in-ethereum-rollups
 title: Data Availability Or: How Rollups Learned To Stop Worrying And Love Ethereum
-description: To be (fully) secured by Ethereum or not, that is the question.
-keywords: null
+pubDate: 20/12/2023
 author: Emmanuel Awosika
-date: null
-publisher: null
-stats: paragraph=118 sentences=247, words=6535
+tags:
+  - Defi
+layout: "../../layouts/BlogPost.astro"
 ---
+
 Data availability is a crucial part of the conversation around blockchain scaling: Layer 2 (L2) rollups are the preferred scaling solution for Ethereum today because availability of the L2 state is enforced by the L1 network. Even so, data availability is poorly understood—particularly in the context of rollups and other flavors of off-chain scaling.
 
 With L2 summer finally happening after several false starts, and modular data availability layers moving from PoC (proof-of-concept) stage to production, educating the community on the implications of rollups' approach to data availability for security and decentralization has become more important than ever. It is especially important for users to know how differences in where transaction data is stored determines if a rollup is "secured by Ethereum" or not.
@@ -46,9 +45,9 @@ But checking if a particular block—and the state derived from executing the bl
 
 Zero-knowledge rollups generate validity proofs for transaction batches, which automatically guarantees safety from invalid execution, and do not suffer from a similar problem; even if a sequencer (or validator) refused to release transaction data, it cannot cause the rollup's L1 contract to accept a commitment (state root) to an invalid block. However, validity proofs cannot guarantee zk-rollup's liveness (the property that asserts "something good eventually happens") as I explained in [an old post on zkEVMs](https://linea.mirror.xyz/qD18IaQ4BROn_Y40EBMTUTdJHYghUtdECscSWyMvm8M).
 
-* Liveness ensures anyone can read the blockchain to derive its contents—for example, to check or prove the balance of a specific address. This is important in certain cases, such as when trying to withdraw assets from a rollup's bridge contract.
+- Liveness ensures anyone can read the blockchain to derive its contents—for example, to check or prove the balance of a specific address. This is important in certain cases, such as when trying to withdraw assets from a rollup's bridge contract.
 
-* Liveness also ensures anyone can write new data to the blockchain, by processing transactions and producing blocks, especially if the rollup's sequencer is unresponsive.
+- Liveness also ensures anyone can write new data to the blockchain, by processing transactions and producing blocks, especially if the rollup's sequencer is unresponsive.
 
 Rollups go different routes when solving the data availability problem, and various design decisions have implications for security and user experience when using L2s. In subsequent sections we'll explore details of the data availability policy adopted by Ethereum rollups—that is, rollups that derive security solely from Ethereum—and then see how it compares to other alternatives.
 
@@ -64,8 +63,8 @@ To update the state of a validity rollup on L1, it is enough to send a valid pro
 
 Here's a brief overview of the process works (for optimistic and validity rollups):
 
-* At intervals, the sequencer arranges transactions into a batch—batches may span several L2 blocks, and the sequencer may [compress transaction data](https://ethresear.ch/t/rollup-diff-compression-application-level-compression-strategies-to-reduce-the-l2-data-footprint-on-l1/9975)to reduce the L1 fees
-* The sequencer publishes the batch on Ethereum L1 by calling the L1 contract that stores rollup batches and passing the compressed data as **calldata**to the batch submission function (see an [example of a batch submission transaction](https://etherscan.io/tx/0x893269729c2ef10f1c76a301181563c6c43b3c5c730e6ce0ab68110af6b9be6f))
+- At intervals, the sequencer arranges transactions into a batch—batches may span several L2 blocks, and the sequencer may [compress transaction data](https://ethresear.ch/t/rollup-diff-compression-application-level-compression-strategies-to-reduce-the-l2-data-footprint-on-l1/9975)to reduce the L1 fees
+- The sequencer publishes the batch on Ethereum L1 by calling the L1 contract that stores rollup batches and passing the compressed data as **calldata**to the batch submission function (see an [example of a batch submission transaction](https://etherscan.io/tx/0x893269729c2ef10f1c76a301181563c6c43b3c5c730e6ce0ab68110af6b9be6f))
 
 This policy is markedly different from that adopted by other (non-Ethereum or partial) rollups in the wild. For example, a "sovereign" rollup might use a bespoke data availability layer to store transaction batches instead of publishing transaction data (inputs or outputs) to Ethereum. It could also post validity proofs or fault proofs—depending on the proof system in question—to the external data availability layer instead of publishing them on Ethereum) and have its full nodes download and verify those proofs to settle transactions.
 
@@ -77,22 +76,22 @@ Amidst the growing popularity of the modular blockchain thesis, newer rollups ar
 
 These data availability blockchains are similar to [data availability committees](https://blog.infura.io/post/solving-blockchain-scalability-with-data-availability-committees), only that they are permissionless (anyone can store data) and have stronger security guarantees (nodes performing data withholding attacks can be slashed). Below are some of the commonly cited benefits of using a non-Ethereum blockchain for data availability:
 
-* **Lower costs**: A blockchain dedicated solely to data availability can optimize for reduced costs of storing data. In contrast, Ethereum combines execution, settlement, and data availability—meaning Ethereum rollups must compete with other L1 transactions for limited blockspace (increasing storage costs in the process).
+- **Lower costs**: A blockchain dedicated solely to data availability can optimize for reduced costs of storing data. In contrast, Ethereum combines execution, settlement, and data availability—meaning Ethereum rollups must compete with other L1 transactions for limited blockspace (increasing storage costs in the process).
 
-* **Scale**: DA blockchains can scale horizontally through primitives like [data availability sampling](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling), allowing execution layers to safely increase block sizes; conversely, an Ethereum rollup must constrain L2 block sizes to what can fit into an Ethereum block.
+- **Scale**: DA blockchains can scale horizontally through primitives like [data availability sampling](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling), allowing execution layers to safely increase block sizes; conversely, an Ethereum rollup must constrain L2 block sizes to what can fit into an Ethereum block.
 
-* **Sovereignty:**By downloading transaction data + proofs from the data availability layer, a sovereign rollup's nodes can verify state updates and independently determine the canonical chain. An Ethereum rollup can only fork by upgrading its smart contracts on L1 (the Ethereum network decides what the canonical chain is).
+- **Sovereignty:**By downloading transaction data + proofs from the data availability layer, a sovereign rollup's nodes can verify state updates and independently determine the canonical chain. An Ethereum rollup can only fork by upgrading its smart contracts on L1 (the Ethereum network decides what the canonical chain is).
 
 Before comparing the costs and benefits of using alternative data availability layers, it's important to note the relationship between data availability and consensus. Here's one way of explaining it:
 
-* The data availability layer is responsible for coming to consensus on the ordering of transactions that ultimately define the rollup's chain
-* Once a set of transactions have been ordered and committed to the base layer, those transactions become part of the canonical rollup chain and cannot be reversed (ie. finalized).
+- The data availability layer is responsible for coming to consensus on the ordering of transactions that ultimately define the rollup's chain
+- Once a set of transactions have been ordered and committed to the base layer, those transactions become part of the canonical rollup chain and cannot be reversed (ie. finalized).
 
 This relationship between data availability and consensus is necessary to guarantee other security properties in a rollup such as:
 
-* **Censorship resistance**: No one should prevent a user from executing transactions on the blockchain, provided transactions are valid and pay the required network fee.
+- **Censorship resistance**: No one should prevent a user from executing transactions on the blockchain, provided transactions are valid and pay the required network fee.
 
-* **Re-org resistance**: No one should be able to arbitrarily "reorganize" a rollup's blocks (effectively rewriting the blockchain's history) to perform a double-spend, or [time bandit attack](https://www.mev.wiki/attack-examples/time-bandit-attack).
+- **Re-org resistance**: No one should be able to arbitrarily "reorganize" a rollup's blocks (effectively rewriting the blockchain's history) to perform a double-spend, or [time bandit attack](https://www.mev.wiki/attack-examples/time-bandit-attack).
 
 Enabling censorship resistance requires a mechanism to force the inclusion of certain transactions. For example, users could submit transactions directly to the data availability layer (if the rollup's sequencer is censoring), and the rollup will have a rule that prevents full nodes from creating valid blocks unless they include these transactions.
 
@@ -108,8 +107,8 @@ Bitcoin and Ethereum have this quality because of the value of their native toke
 
 Given this explanation, it's possible to analyze the relationship between data availability, economic security, and rollup security by asking the following questions:
 
-* How much will it cost an attacker to revert blocks on the data availability layer to prevent (honest) watcher nodes from accessing transaction data required to verify a state update and create fault proofs? **(Optimistic rollups)**
-* How much will it cost an attacker to force nodes on the data availability to refuse requests for serve rollup data—for example, from users that require transaction batch data to construct Merkle proofs for proving inclusion of exit transactions to the bridge contract, or rollup nodes that require state data to produce new blocks? (**Validity rollups and optimistic rollups)*
+- How much will it cost an attacker to revert blocks on the data availability layer to prevent (honest) watcher nodes from accessing transaction data required to verify a state update and create fault proofs? **(Optimistic rollups)**
+- How much will it cost an attacker to force nodes on the data availability to refuse requests for serve rollup data—for example, from users that require transaction batch data to construct Merkle proofs for proving inclusion of exit transactions to the bridge contract, or rollup nodes that require state data to produce new blocks? (\*_Validity rollups and optimistic rollups)_
 
 In this context, using Ethereum for data availability and deriving security properties—like resistance to reorgs and safety failure—from L1 consensus offers a lot of benefit for Ethereum rollups. Can a specialized data availability layer guarantee the same level of security for rollups? That remains to be seen, but experience shows the difficulty of bootstrapping meaningful economic security for blockchains, especially when the network's native token hasn't gained significant market value.
 
@@ -135,8 +134,8 @@ In an "optimium" (i.e., an optimistic rollup-like construction with off-chain da
 
 Decentralization is the major difference between a DAC and a data availability network:
 
-* DACs are permissioned and restricted to pre-appointed members; conversely, data availability networks are typically permissionless and allow any operator—provided they are staked on the network—to store data. (You can think of a data availability as a "permissionless DAC" for this reason.)
-* While data availability networks rely on slashing for cryptoeconomic security, DAC members are usually not required to bond any collateral before assuming data storage duties; instead, security relies on the assumption that DAC nodes—who are often publicly identifiable—will act honestly to protect their reputations (i.e., social accountability).
+- DACs are permissioned and restricted to pre-appointed members; conversely, data availability networks are typically permissionless and allow any operator—provided they are staked on the network—to store data. (You can think of a data availability as a "permissionless DAC" for this reason.)
+- While data availability networks rely on slashing for cryptoeconomic security, DAC members are usually not required to bond any collateral before assuming data storage duties; instead, security relies on the assumption that DAC nodes—who are often publicly identifiable—will act honestly to protect their reputations (i.e., social accountability).
 
 A DAC solves the data availability problem to an extent—you've got around 7-12 nodes that promise to make transaction data available (with reputations on the line if they fail to perform duties). However, this approach doesn't achieve the same level of trustlessness and censorship resistance as a rollup that puts the data on-chain.
 
@@ -152,21 +151,21 @@ Recently, I got talking with [Andrew](https://awmacpherson.com/)—who's a [capi
 
 To provide some background: many data availability services rely on well-studied cryptographic primitives for security (sidenote: Ethereum's long-term solution for scaling data availability for rollups—[Danksharding](https://ethereum.org/en/roadmap/danksharding/)—relies on a similar set of primitives and makes similar security assumptions.). Below is a (non-exhaustive) list of such primitives:
 
-* [Proofs of custody](https://ethresear.ch/t/a-0-001-bit-proof-of-custody/7409)and [proofs of retrievability](https://www.microsoft.com/en-us/research/video/compact-proofs-of-retrievability/)—which allow a client to verify that an untrusted node is storing a piece of data for an agreed period as promised.
+- [Proofs of custody](https://ethresear.ch/t/a-0-001-bit-proof-of-custody/7409)and [proofs of retrievability](https://www.microsoft.com/en-us/research/video/compact-proofs-of-retrievability/)—which allow a client to verify that an untrusted node is storing a piece of data for an agreed period as promised.
 
-* Data availability sampling (which I mentioned previously) ensures light clients to reliably detect unavailable blocks without downloading block contents. Combining DAS schemes with [erasure codes](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#erasure-codes-as-a-solution)enable sharding data storage may also allow clients to reconstruct data blobs by asking multiple peers for pieces of the data, instead of relying on a single node, which reduces the risk of censorship and data withholding attacks.
+- Data availability sampling (which I mentioned previously) ensures light clients to reliably detect unavailable blocks without downloading block contents. Combining DAS schemes with [erasure codes](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#erasure-codes-as-a-solution)enable sharding data storage may also allow clients to reconstruct data blobs by asking multiple peers for pieces of the data, instead of relying on a single node, which reduces the risk of censorship and data withholding attacks.
 
 But back to Andrew's point about censoring requests for data blobs. You might think: "Surely, a data availability protocol would have some mechanism for punishing nodes that fail to release data to clients?" That would be correct, except that implementing this mechanism isn't exactly straightforward. Specifically, as Andrew put it: "you can't punish a node for not serving up blobs based on a client's allegation."
 
 > _"A trustless DAC [another name for a decentralized data availability service] is considered the ideal data availability solution in the blockchain community. But decentralized DACs have one fundamental issue that remains unsolved: the Fisherman's Problem. In data availability literature, The Fisherman's Problem is used to illustrate issues that appear in interactions between clients requesting data and nodes storing data in a trustless DAC protocol._
-_Below is a brief description of The Fisherman's Problem:_
-_Imagine a client requesting data from a node finds out parts of a block are unavailable and alerts other peers on the network. The node, however, releases the data afterwards so that other nodes find that the block's data is available upon inspection. This creates a dilemma: Was the node deliberately withholding data, or was the client raising a false alarm?"_
+> _Below is a brief description of The Fisherman's Problem:_
+> _Imagine a client requesting data from a node finds out parts of a block are unavailable and alerts other peers on the network. The node, however, releases the data afterwards so that other nodes find that the block's data is available upon inspection. This creates a dilemma: Was the node deliberately withholding data, or was the client raising a false alarm?"_
 
 As the infographic above shows, data unavailability is not a uniquely attributable fault; in English, that means that another node (or the protocol) cannot objectively know if the node truly refused to serve up data, or a malicious client is trying to game the system by earning rewards for false challenges. I encourage reading the previously linked articles for more background on the Fisherman's Problem; a more formal description of the problem with guaranteeing cryptoeconomic security for data availability services can be found in [this paper by Ertem Nusret Tas et al.](https://arxiv.org/abs/2208.02999)
 
 And if solving cryptoeconomic security wasn't enough to worry about, data availability sampling—which a "decentralized data availability service" might claim is the bedrock of its security guarantees—[is still an open problem for researchers](https://github.com/ethereum/research/wiki/A-note-on-data-availability-and-erasure-coding#erasure-codes-as-a-solution). The complexity of designing modular data availability schemes is why Danksharding is expected to take years to implement and Proto-Danksharding requires all nodes to store full EIP-4844 blobs (as opposed to storing a small part and enabling clients reconstruct blobs via random sampling).
 
-Publishing rollup data on L1 and guaranteeing persistence + availability by forcing nodes to redundantly store copies of the data isn't the most elegant solution. However, when you have the security of billions of dollars' worth of assets resting on a rollup's security (which is tightly coupled to the rollup's data availability policy), keeping it simple—until we know how to _securely_implement a better solution—is a good idea.
+Publishing rollup data on L1 and guaranteeing persistence + availability by forcing nodes to redundantly store copies of the data isn't the most elegant solution. However, when you have the security of billions of dollars' worth of assets resting on a rollup's security (which is tightly coupled to the rollup's data availability policy), keeping it simple—until we know how to \_securely_implement a better solution—is a good idea.
 
 Everything I've said up until now suggests publishing transaction data on Ethereum is the gold standard for Ethereum rollups. But there are different approaches an Ethereum rollup may adopt to storing state data on-chain. The differences are subtle, and may even be considered minor implementation details; however, blockchains are the one place where a cliché like "the devil is in the details" has a lot of truth to it.
 
@@ -184,14 +183,14 @@ A mechanism for forcing the inclusion of L1→ L2 messages is easier to implemen
 
 In the usual case, only the sequencer is allowed to submit transaction batches to the rollup's inbox—this naturally introduces a degree of centralization, but is necessary if users are to trust confirmations from the rollup's sequencer. To guarantee protection from a censoring sequencer , rollups will ideally allow a user to send a transaction to the inbox contract—with the caveat that the transaction won't be included in the inbox until the "timeout parameter" ( the delay imposed on transactions submitted to the rollup's inbox by a non-sequencer address) is exceeded.
 
-Once the transaction makes its way into the rollup's inbox, however, it becomes a part of the canonical rollup chain. This forces the sequencer to include it in the next batch, otherwise it cannot produce a valid batch; for instance, a validity proof will reference both sequenced batches created off-chain by the sequencer _and_forced batches submitted on-chain by users. By employing the force-inclusion mechanism Ethereum rollups enable users to automatically process transactions without relying on the sequencer's honesty.
+Once the transaction makes its way into the rollup's inbox, however, it becomes a part of the canonical rollup chain. This forces the sequencer to include it in the next batch, otherwise it cannot produce a valid batch; for instance, a validity proof will reference both sequenced batches created off-chain by the sequencer \_and_forced batches submitted on-chain by users. By employing the force-inclusion mechanism Ethereum rollups enable users to automatically process transactions without relying on the sequencer's honesty.
 
-Forcing the execution of L1 → L2 transactions is more difficult if a zk-rollup publishes state diffs on-chain. In such rollups, transactions—specifically, the output of transactions—are posted to L1 _after_execution (which is primarily handled by the sequencer). This means users have no way to automatically include transactions and must rely on the cooperation of a sequencer to execute transactions that interact with a rollup's bridge contract.
+Forcing the execution of L1 → L2 transactions is more difficult if a zk-rollup publishes state diffs on-chain. In such rollups, transactions—specifically, the output of transactions—are posted to L1 \_after_execution (which is primarily handled by the sequencer). This means users have no way to automatically include transactions and must rely on the cooperation of a sequencer to execute transactions that interact with a rollup's bridge contract.
 
-To clarify, this explanation does _not_connote that every zk-rollups designed this way are susceptible to censorship. Certain zkEVM implementations have mechanisms that allow a user to post a message on L1 if they're being censored on L2. If that transaction isn't processed after a preset delay the chain enters an "emergency mode". This usually does one (or both) of the following:
+To clarify, this explanation does \_not_connote that every zk-rollups designed this way are susceptible to censorship. Certain zkEVM implementations have mechanisms that allow a user to post a message on L1 if they're being censored on L2. If that transaction isn't processed after a preset delay the chain enters an "emergency mode". This usually does one (or both) of the following:
 
-* Prevents any more state updates from the trusted sequencer (whilst allowing users to withdraw assets from the rollup's bridge using Merkle proofs of ownership)
-* Allows anyone (including users) to become an operator and process rollup transactions
+- Prevents any more state updates from the trusted sequencer (whilst allowing users to withdraw assets from the rollup's bridge using Merkle proofs of ownership)
+- Allows anyone (including users) to become an operator and process rollup transactions
 
 Although these two mechanisms offer some anti-censorship protection, they are considerably less-than-ideal compared to the default approach of forcing a sequencer to execute delayed transactions; for example, the first technique (disabling state updates from a censoring sequencer) affects a rollup's liveness and doesn't assist with forcing the execution of non-withdrawal operations.
 
@@ -211,10 +210,10 @@ In comparison, publishing transaction inputs on-chain improves finality guarante
 
 A not-so-obvious consequence of publishing state diffs is that recreating a rollup's history using data from L1 becomes more difficult. For context, a validity proof only confirms that the rollup's new state is valid—but it doesn't reveal anything about the contents of the state or what transactions resulted in the new state.
 
-And while this topic is rarely discussed, _many_applications need access to both real-time and historical blockchain data to improve overall user experience. Consider, for example, the following scenario (taken from this [great post](https://medium.com/offchainlabs/optimistic-rollups-the-present-and-future-of-ethereum-scaling-60fb9067ae87)by the Arbitrum team):
+And while this topic is rarely discussed, \_many_applications need access to both real-time and historical blockchain data to improve overall user experience. Consider, for example, the following scenario (taken from this [great post](https://medium.com/offchainlabs/optimistic-rollups-the-present-and-future-of-ethereum-scaling-60fb9067ae87)by the Arbitrum team):
 
 > _"Suppose that Alice submits a transaction paying Bob 1 ETH, and Bob submits a transaction paying Charlie 1 ETH, in quick succession. Later you verify a proof that Alice has 1 ETH less than before, Bob's balance hasn't changed, and Charlie has 1 ETH more than before._
-_But what happened? Did Alice pay Bob? Did Bob pay Charlie? Maybe Alice paid Charlie directly. Maybe Alice burned an ETH and Charlie was paid by someone else. Maybe Diana was the intermediary, not Bob. Bob looks to the blockchain for evidence, but with some ZK-rollups that don't provide chain visibility, he can't tell the difference."_
+> _But what happened? Did Alice pay Bob? Did Bob pay Charlie? Maybe Alice paid Charlie directly. Maybe Alice burned an ETH and Charlie was paid by someone else. Maybe Diana was the intermediary, not Bob. Bob looks to the blockchain for evidence, but with some ZK-rollups that don't provide chain visibility, he can't tell the difference."_
 
 Here, Bob can't tell how many times 1 ETH moved between accounts because the batch includes final state diffs (Alice's balance decreased by 1 ETH and Charlie's balance increased by 1 ETH) and excludes intermediary transactions (Alice sending 1 ETH to Bob). And Bob's balance doesn't change because the rollup batch conceals information about intermediate state transitions.
 
@@ -222,35 +221,35 @@ Bob's dilemma also reinforces a key point: many crypto applications require a co
 
 Some of these applications and services include:
 
-* **Decentralized exchanges (DEXs)**: DEXs like Uniswap or SushiSwap often require full transaction history to track the state of liquidity pools and calculate token prices accurately based on trading volume and liquidity.
+- **Decentralized exchanges (DEXs)**: DEXs like Uniswap or SushiSwap often require full transaction history to track the state of liquidity pools and calculate token prices accurately based on trading volume and liquidity.
 
-* **DeFi protocols**: Financial protocols like Aave or Compound need a complete history to calculate interest rates, loan repayments, collateral ratios, and other financial metrics. Also, they may need to audit and track transactions for regulatory compliance purposes.
+- **DeFi protocols**: Financial protocols like Aave or Compound need a complete history to calculate interest rates, loan repayments, collateral ratios, and other financial metrics. Also, they may need to audit and track transactions for regulatory compliance purposes.
 
-* **NFT marketplaces**: These platforms might need to know the complete transaction history to verify the authenticity and provenance of the NFTs. Knowing who owned an NFT and when can greatly impact its perceived value.
+- **NFT marketplaces**: These platforms might need to know the complete transaction history to verify the authenticity and provenance of the NFTs. Knowing who owned an NFT and when can greatly impact its perceived value.
 
-* **Blockchain forensics**: Blockchain forensics services (eg. Chainalysis) provide analytics tools for transparency, anti-money laundering (AML), and know-your-customer (KYC) compliance. They use transaction histories to analyze patterns, detect suspicious activities, and trace funds.
+- **Blockchain forensics**: Blockchain forensics services (eg. Chainalysis) provide analytics tools for transparency, anti-money laundering (AML), and know-your-customer (KYC) compliance. They use transaction histories to analyze patterns, detect suspicious activities, and trace funds.
 
-* **Prediction markets**: Platforms like Augur may need transaction history to resolve market predictions and distribute payouts fairly and accurately.
+- **Prediction markets**: Platforms like Augur may need transaction history to resolve market predictions and distribute payouts fairly and accurately.
 
-* **Decentralized autonomous organizations (DAOs)**: DAOs may require transaction history for governance purposes, such as tracking voting on proposals.
+- **Decentralized autonomous organizations (DAOs)**: DAOs may require transaction history for governance purposes, such as tracking voting on proposals.
 
-* **Staking protocols**: These protocols require complete transaction history to calculate rewards for staking participants.
+- **Staking protocols**: These protocols require complete transaction history to calculate rewards for staking participants.
 
-* **Cross-chain bridges**: These tools need full transaction history to ensure secure and accurate transfer of assets between different blockchains.
+- **Cross-chain bridges**: These tools need full transaction history to ensure secure and accurate transfer of assets between different blockchains.
 
 This article has largely focused on the benefits of rollups using Ethereum for data availability, but that doesn't mean there are no drawbacks involved. In fact, I'll be the first to admit that rollups currently [pay](https://l2fees.info/l1-fees) _ [a lot](https://l2fees.info/l1-fees)_ [to Ethereum for data availability](https://l2fees.info/l1-fees)—and since rollups aren't nonprofits, this cost is naturally passed on to users.
 
-Still, putting (full) transaction data on-chain provides a number of advantages—many of which I've analyzed in this post. These are benefits that a _practical_chain should provide, and every rollup's data availability policy should be evaluated based on how well it guarantees those benefits for users.
+Still, putting (full) transaction data on-chain provides a number of advantages—many of which I've analyzed in this post. These are benefits that a \_practical_chain should provide, and every rollup's data availability policy should be evaluated based on how well it guarantees those benefits for users.
 
 Building things that work in real-world conditions requires making compromises, but a problem appears when when protocols avoid communicating the various trust assumptions that underlie the security of assets owned by users—or, worse, cut corners and dress it up under the banner of "tradeoffs" (something certain marketing teams in crypto have turned into an art ).
 
 Besides, it may well be possible to "eat your cake and have it too" when it comes to storing rollup data on Ethereum—here are some details for context:
 
-* Several validity (ZK) rollups are already working towards omitting signatures from transaction data, which will reduce overall on-chain footprint and bring cost savings comparable to publishing state diffs.
+- Several validity (ZK) rollups are already working towards omitting signatures from transaction data, which will reduce overall on-chain footprint and bring cost savings comparable to publishing state diffs.
 
-* [EIP-4844 (Proto-Danksharding)](https://www.eip4844.com/)will reduce costs for storing L2 data on Ethereum in the short-term by introducing data blobs and allow moderate scaling of throughput on Ethereum rollups (ballpark estimates range between 10X to 20X of current capacities).
+- [EIP-4844 (Proto-Danksharding)](https://www.eip4844.com/)will reduce costs for storing L2 data on Ethereum in the short-term by introducing data blobs and allow moderate scaling of throughput on Ethereum rollups (ballpark estimates range between 10X to 20X of current capacities).
 
-* [Full danksharding](http://v)will reduce data availability costs even further, and improve scalability for rollups by increasing Ethereum's data bandwidth.
+- [Full danksharding](http://v)will reduce data availability costs even further, and improve scalability for rollups by increasing Ethereum's data bandwidth.
 
 With these design improvements, we can get to an ideal world where [L2 transactions cost less than a few cents](https://twitter.com/VitalikButerin/status/1521501499410587653?s=20&t=U-i_dpd8G9CX21kjrFvRvg)and rollups can support high-throughput applications without reducing decentralization or security. This means that, on-chain data availability may currently be inefficient for rollups (compared to alternatives), but it'll become the most effective solution for data availability _eventually_.
 

@@ -1,40 +1,39 @@
 ---
-link: https://ethereum2077.substack.com/p/understanding-blockchain-governance
 title: Understanding Blockchain Governance
-description: Blockchain governance is "everything about decisions that affect stakeholders."
-keywords: null
+pubDate: 05/06/2024
 author: Fikunmi
-date: null
-publisher: null
-stats: paragraph=39 sentences=101, words=1927
+tags:
+  - Defi
+layout: "../../layouts/BlogPost.astro"
 ---
+
 The way most of us (including yours truly) think of blockchain governance is naive. We think governance is about deciding what forks the protocol undergoes or on-chain governance, but this is a gross reduction/oversimplification of governance. The formal processes that we often conflate with governance are a very small part of the actual process.
 
 Most blockchain governance happens on Twitter in the form of never-ending waves of psyops from stakeholders looking to coerce (subtly or aggressively) everyone else or at least the majority, to accept their vision as the future of blockchains. It's not immediately obvious that tweeting "eth is the future of the internet" or "restaking is bad" is propaganda and that's why I've written this article—to help you develop a complete mental framework of what blockchain governance is.
 
 I start by explaining why you should care about governance at all, then I explain what it is, how you can participate in it and finish off with identifying key elements of blockchain governance that'll help shape your understanding of politics. Let's get to it.
 
-It's easy to be apathetic about blockchain governance; it seems like the only way to participate–debating EIPs, might be better left to _egghead-gigabrains_like Vitalik or Tim Roughgarden. Whether that be because you don't feel smart enough to contribute (which we'll address later) or because you feel OK delegating the decision making, there are two reasons why **you**should care and participate in blockchain governance:
+It's easy to be apathetic about blockchain governance; it seems like the only way to participate–debating EIPs, might be better left to \_egghead-gigabrains_like Vitalik or Tim Roughgarden. Whether that be because you don't feel smart enough to contribute (which we'll address later) or because you feel OK delegating the decision making, there are two reasons why **you**should care and participate in blockchain governance:
 
 These two reasons are why I participate in governance and why you should too. It's also important to keep in mind that it won't always be this way; the space will expand and like it or not, there'll be a need for more and more formalization and "permissioning." In essence, as an individual, you currently have the most power you'll ever have over this ecosystem and not doing anything now is missing out on your chance to secure your future and impress your ideals on the world at the same time.
 
 I hope I've managed to light a fire in you on why you should care about blockchain governance. Next, we'll look at what the term "blockchain governance" means.
 
-There are many definitions but Vlad Zamfir did a good job of succinctly encapsulating what governance is. I'm paraphrasing here but Vlad basically says, " _governance is **everything**about decisions that affect stakeholders."_I have "everything" in bold because it's very important to keep in mind. More from Vlad:
+There are many definitions but Vlad Zamfir did a good job of succinctly encapsulating what governance is. I'm paraphrasing here but Vlad basically says, " \_governance is **everything**about decisions that affect stakeholders."\_I have "everything" in bold because it's very important to keep in mind. More from Vlad:
 
-> It's also about how they coordinate around decisions and decision-making processes. It includes the establishment, maintenance, and revocation of the _**legitimacy**_of decisions, decision making processes, norms, and other mechanisms for coordination.
+> It's also about how they coordinate around decisions and decision-making processes. It includes the establishment, maintenance, and revocation of the \_**legitimacy**\_of decisions, decision making processes, norms, and other mechanisms for coordination.
 
 In summary, _blockchain governance is everything about how blockchain stakeholders coordinate around the establishment, maintenance, and revocation of the legitimacy of decisions, decision making processes, norms, and other mechanisms for coordination._
 
-" _Legitimate_" here means that a decision, decision making process, or coordination mechanism is _legitimate_if stakeholders (justifiably) act like it is a fact that other stakeholders will accept and/or use that decision, decision-making process, or mechanism for coordination.
+" _Legitimate_" here means that a decision, decision making process, or coordination mechanism is \_legitimate_if stakeholders (justifiably) act like it is a fact that other stakeholders will accept and/or use that decision, decision-making process, or mechanism for coordination.
 
-The mistake most people make when thinking about governance is that they confuse _legitimacy_with formality. They think Ethereum Improvement Proposals (EIP) are legitimate (and one of the only legitimate ways to participate in governance) because there's formal documentation of EIPs. But the sentiment that everyone should be able to run a node at home as the benchmark for Ethereum decentralization is just as _legitimate_as any EIP without any formalization.
+The mistake most people make when thinking about governance is that they confuse \_legitimacy_with formality. They think Ethereum Improvement Proposals (EIP) are legitimate (and one of the only legitimate ways to participate in governance) because there's formal documentation of EIPs. But the sentiment that everyone should be able to run a node at home as the benchmark for Ethereum decentralization is just as \_legitimate_as any EIP without any formalization.
 
 Acknowledging and understanding the difference between formal and informal governance processes is the secret to truly understanding blockchain governance.
 
-* Formal governance typically involves explicit rules, procedures, and structures established by official authorities or governing bodies. In formal governance, there are well-defined laws, regulations, policies, charters, and formal decision-making processes.
+- Formal governance typically involves explicit rules, procedures, and structures established by official authorities or governing bodies. In formal governance, there are well-defined laws, regulations, policies, charters, and formal decision-making processes.
 
-* Informal governance is more subtle and has no structure—it's spontaneous, _scrappy, fun, and chaotic,_but it can be just as _legitimate_, if not more _._
+- Informal governance is more subtle and has no structure—it's spontaneous, _scrappy, fun, and chaotic,\_but it can be just as \_legitimate_, if not more _._
 
 Informal governance is important in all governance structures but especially in blockchain governance. Because of the focus on decentralization, formal governance processes usually only serve to ratify what informal governance processes have already decided.
 
@@ -54,17 +53,17 @@ There is no formal guidebook and each chain/community has its nuances but in gen
 
 While that would be a great place to stop, I want to help you build a mental framework for thinking about governance.
 
-* Core Devs: They're just the developers that develop and maintain an actively used client; they have very little power over the actual chain; think the developers of geth.
+- Core Devs: They're just the developers that develop and maintain an actively used client; they have very little power over the actual chain; think the developers of geth.
 
-* App Devs/Entrepreneurs: Are developers/entrepreneurs that build applications/protocols on or around the blockchain protocol.
+- App Devs/Entrepreneurs: Are developers/entrepreneurs that build applications/protocols on or around the blockchain protocol.
 
-* Researchers: Individuals/entities that chart the course of innovation by studying the protocol and positing improvements. Core Devs focus on implementing the work of researchers. For some blockchains (e.g. Ethereum), researchers are distinct from other classes of stakeholders and for others (e.g. Solana), there's a good degree of overlap between researchers and core devs.
+- Researchers: Individuals/entities that chart the course of innovation by studying the protocol and positing improvements. Core Devs focus on implementing the work of researchers. For some blockchains (e.g. Ethereum), researchers are distinct from other classes of stakeholders and for others (e.g. Solana), there's a good degree of overlap between researchers and core devs.
 
-* Node Operators: are entities that run full nodes/validating (or mining) nodes.
+- Node Operators: are entities that run full nodes/validating (or mining) nodes.
 
-* Token Holders: Entities that hold the token as an investment.
+- Token Holders: Entities that hold the token as an investment.
 
-* Users: people who just want to use the chain. At the moment, there's good overlap between users and token holders but in the future, there'll likely be a good degree of separation between both classes. A good example of users that currently exist are remote workers in third world countries that enjoy the convinience of using blockchains to receive payments. This class of stakeholders are not token holders, they just want to use the chain.
+- Users: people who just want to use the chain. At the moment, there's good overlap between users and token holders but in the future, there'll likely be a good degree of separation between both classes. A good example of users that currently exist are remote workers in third world countries that enjoy the convinience of using blockchains to receive payments. This class of stakeholders are not token holders, they just want to use the chain.
 
 Trademark holders and media are not strictly stakeholders but they also heavily influence governance so I'll mention them as well.
 
@@ -73,7 +72,7 @@ Trademark holders and media are not strictly stakeholders but they also heavily 
 Media publications are an important part of the discussion because of the reasons discussed earlier. Usually, whoever controls the media has a good stranglehold on the governance of the chain.
 
 4. Incentives
-Different stakeholders "participate in blockchains" for different reasons; it's important to keep incentives in mind because they strongly influence governance. A great example of this is the Ethereum Minimum Viable Issuance proposal. It was strongly rebutted because of a misalignment in incentives for token holders. There are also social incentives, e.g., core devs and researchers have social incentives to be "aligned."
+   Different stakeholders "participate in blockchains" for different reasons; it's important to keep incentives in mind because they strongly influence governance. A great example of this is the Ethereum Minimum Viable Issuance proposal. It was strongly rebutted because of a misalignment in incentives for token holders. There are also social incentives, e.g., core devs and researchers have social incentives to be "aligned."
 
 If you approach governance with these four elements in mind, it's easy to understand and effectively participate.
 

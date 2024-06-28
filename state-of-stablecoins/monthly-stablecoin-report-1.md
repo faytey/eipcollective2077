@@ -1,6 +1,6 @@
 ---
 title: Monthly Stablecoin Report #1
-pubDate: 04/06/2024
+pubDate: 06/28/2024
 author: Arbnom
 tags:
   - Defi

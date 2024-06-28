@@ -1,6 +1,6 @@
 ---
 title: EIPs For Nerds #2: EIP-7002 (Execution Layer Triggerable Exits)
-pubDate: 08/01/2024
+pubDate: 06/28/2024
 author: Emmanuel Awosika
 tags:
   - Defi

@@ -1,6 +1,6 @@
 ---
 title: Data Availability Or: How Rollups Learned To Stop Worrying And Love Ethereum
-pubDate: 20/12/2023
+pubDate: 06/28/2024
 author: Emmanuel Awosika
 tags:
   - Defi
@@ -157,9 +157,7 @@ To provide some background: many data availability services rely on well-studied
 
 But back to Andrew's point about censoring requests for data blobs. You might think: "Surely, a data availability protocol would have some mechanism for punishing nodes that fail to release data to clients?" That would be correct, except that implementing this mechanism isn't exactly straightforward. Specifically, as Andrew put it: "you can't punish a node for not serving up blobs based on a client's allegation."
 
-> _"A trustless DAC [another name for a decentralized data availability service] is considered the ideal data availability solution in the blockchain community. But decentralized DACs have one fundamental issue that remains unsolved: the Fisherman's Problem. In data availability literature, The Fisherman's Problem is used to illustrate issues that appear in interactions between clients requesting data and nodes storing data in a trustless DAC protocol._
-> _Below is a brief description of The Fisherman's Problem:_
-> _Imagine a client requesting data from a node finds out parts of a block are unavailable and alerts other peers on the network. The node, however, releases the data afterwards so that other nodes find that the block's data is available upon inspection. This creates a dilemma: Was the node deliberately withholding data, or was the client raising a false alarm?"_
+> _"A trustless DAC [another name for a decentralized data availability service] is considered the ideal data availability solution in the blockchain community. But decentralized DACs have one fundamental issue that remains unsolved: the Fisherman's Problem. In data availability literature, The Fisherman's Problem is used to illustrate issues that appear in interactions between clients requesting data and nodes storing data in a trustless DAC protocol._ > _Below is a brief description of The Fisherman's Problem:_ > _Imagine a client requesting data from a node finds out parts of a block are unavailable and alerts other peers on the network. The node, however, releases the data afterwards so that other nodes find that the block's data is available upon inspection. This creates a dilemma: Was the node deliberately withholding data, or was the client raising a false alarm?"_
 
 As the infographic above shows, data unavailability is not a uniquely attributable fault; in English, that means that another node (or the protocol) cannot objectively know if the node truly refused to serve up data, or a malicious client is trying to game the system by earning rewards for false challenges. I encourage reading the previously linked articles for more background on the Fisherman's Problem; a more formal description of the problem with guaranteeing cryptoeconomic security for data availability services can be found in [this paper by Ertem Nusret Tas et al.](https://arxiv.org/abs/2208.02999)
 
@@ -212,8 +210,7 @@ A not-so-obvious consequence of publishing state diffs is that recreating a roll
 
 And while this topic is rarely discussed, \_many_applications need access to both real-time and historical blockchain data to improve overall user experience. Consider, for example, the following scenario (taken from this [great post](https://medium.com/offchainlabs/optimistic-rollups-the-present-and-future-of-ethereum-scaling-60fb9067ae87)by the Arbitrum team):
 
-> _"Suppose that Alice submits a transaction paying Bob 1 ETH, and Bob submits a transaction paying Charlie 1 ETH, in quick succession. Later you verify a proof that Alice has 1 ETH less than before, Bob's balance hasn't changed, and Charlie has 1 ETH more than before._
-> _But what happened? Did Alice pay Bob? Did Bob pay Charlie? Maybe Alice paid Charlie directly. Maybe Alice burned an ETH and Charlie was paid by someone else. Maybe Diana was the intermediary, not Bob. Bob looks to the blockchain for evidence, but with some ZK-rollups that don't provide chain visibility, he can't tell the difference."_
+> _"Suppose that Alice submits a transaction paying Bob 1 ETH, and Bob submits a transaction paying Charlie 1 ETH, in quick succession. Later you verify a proof that Alice has 1 ETH less than before, Bob's balance hasn't changed, and Charlie has 1 ETH more than before._ > _But what happened? Did Alice pay Bob? Did Bob pay Charlie? Maybe Alice paid Charlie directly. Maybe Alice burned an ETH and Charlie was paid by someone else. Maybe Diana was the intermediary, not Bob. Bob looks to the blockchain for evidence, but with some ZK-rollups that don't provide chain visibility, he can't tell the difference."_
 
 Here, Bob can't tell how many times 1 ETH moved between accounts because the batch includes final state diffs (Alice's balance decreased by 1 ETH and Charlie's balance increased by 1 ETH) and excludes intermediary transactions (Alice sending 1 ETH to Bob). And Bob's balance doesn't change because the rollup batch conceals information about intermediate state transitions.
 

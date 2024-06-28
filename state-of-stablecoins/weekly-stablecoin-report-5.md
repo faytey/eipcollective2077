@@ -1,6 +1,6 @@
 ---
 title: Weekly Stablecoin Report #5
-pubDate: 28/05/2024
+pubDate: 06/28/2024
 author: Arbnom
 tags:
   - Defi

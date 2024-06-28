@@ -1,6 +1,6 @@
 ---
 title: EIPs For Nerds #3: EIP-7251 (Increase MAX_EFFECTIVE_BALANCE)
-pubDate: 10/01/2024
+pubDate: 06/28/2024
 author: Emmanuel Awosika
 tags:
   - Defi

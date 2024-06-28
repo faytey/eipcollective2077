@@ -1,6 +1,6 @@
 ---
 title: Understanding Blockchain Governance
-pubDate: 05/06/2024
+pubDate: 06/28/2024
 author: Fikunmi
 tags:
   - Defi

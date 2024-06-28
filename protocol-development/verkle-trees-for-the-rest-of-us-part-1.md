@@ -1,6 +1,6 @@
 ---
 title: Verkle Trees For The Rest Of Us: Part I
-pubDate: 15/12/2023
+pubDate: 06/28/2024
 author: Emmanuel Awosika
 tags:
   - Defi

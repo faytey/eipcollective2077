@@ -1,6 +1,6 @@
 ---
 title: EIPs For Nerds #4: EIP-6110 (Supply Validator Deposits On-Chain)
-pubDate: 13/03/2024
+pubDate: 06/28/2024
 author: Emmanuel Awosika
 tags:
   - Defi

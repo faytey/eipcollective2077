@@ -1,6 +1,6 @@
 ---
 title: EIPs For Nerds #1: ERC-7512 (On-Chain Representation For Security Audits)
-pubDate: 05/12/2023
+pubDate: 06/28/2024
 author: Emmanuel Awosika
 tags:
   - Defi
